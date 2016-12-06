@@ -2,9 +2,12 @@
   "name": "arr2obj",
   "version": "1.0.0",
   "description": "Convert an array to plain object",
-  "main": "index.js",
+  "main": "lib/arr2obj.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=build",
+    "dev": "webpack --progress --colors --watch --mode=dev",
+    "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js",
+    "jsdoc2md": "jsdoc2md"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/georapbox/arr2obj/issues"
   },
-  "homepage": "https://github.com/georapbox/arr2obj#readme"
+  "homepage": "https://github.com/georapbox/arr2obj#readme",
+  "devDependencies": {
+    "babel": "~6.5.2",
+    "babel-core": "~6.18.2",
+    "babel-loader": "~6.2.8",
+    "babel-plugin-add-module-exports": "~0.2.1",
+    "babel-preset-es2015": "~6.18.0",
+    "chai": "~3.5.0",
+    "eslint": "~3.11.1",
+    "jsdoc-to-markdown": "~2.0.1",
+    "mocha": "~3.2.0",
+    "webpack": "~1.13.3",
+    "yargs": "~6.5.0"
+  }
 }
