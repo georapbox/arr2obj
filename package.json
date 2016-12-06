@@ -1,0 +1,20 @@
+{
+  "name": "arr2obj",
+  "version": "1.0.0",
+  "description": "Convert an array to plain object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georapbox/arr2obj.git"
+  },
+  "keywords": [],
+  "author": "George Raptis <georapbox@gmail.com> (georapbox.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/georapbox/arr2obj/issues"
+  },
+  "homepage": "https://github.com/georapbox/arr2obj#readme"
+}
