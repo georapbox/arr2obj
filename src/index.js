@@ -31,26 +31,24 @@ import extend from './util/extend';
  *   key: '_id',
  *   keyPrefix: '$'
  * });
- * // ->
- * {
- *   '$u0': { _id: 'u0', name: 'John Doe', job: 'Frontend Developer' },
- *   '$u1': { _id: 'u1', name: 'Albert Brown', job: 'Designer' },
- *   '$u2': { _id: 'u2', name: 'Stuart Chalmers', job: 'Product Manager' },
- *   '$u3': { _id: 'u3', name: 'Alberta Jonson', job: 'Account Manager' }
- * }
+ * // -> {
+ * // ->   '$u0': { _id: 'u0', name: 'John Doe', job: 'Frontend Developer' },
+ * // ->   '$u1': { _id: 'u1', name: 'Albert Brown', job: 'Designer' },
+ * // ->   '$u2': { _id: 'u2', name: 'Stuart Chalmers', job: 'Product Manager' },
+ * // ->   '$u3': { _id: 'u3', name: 'Alberta Jonson', job: 'Account Manager' }
+ * // -> }
  *
  * // Convert an array of objects using the "_id" property as key of the result object, and delete it from the result object.
  * arr2obj(arr1, {
  *   key: '_id',
  *   deleteKey: true
  * });
- * // ->
- * {
- *   'u0': { name: 'John Doe', job: 'Frontend Developer' },
- *   'u1': { name: 'Albert Brown', job: 'Designer' },
- *   'u2': { name: 'Stuart Chalmers', job: 'Product Manager' },
- *   'u3': { name: 'Alberta Jonson', job: 'Account Manager' }
- * }
+ * // -> {
+ * // ->   'u0': { name: 'John Doe', job: 'Frontend Developer' },
+ * // ->   'u1': { name: 'Albert Brown', job: 'Designer' },
+ * // ->   'u2': { name: 'Stuart Chalmers', job: 'Product Manager' },
+ * // ->   'u3': { name: 'Alberta Jonson', job: 'Account Manager' }
+ * // -> }
  *
  * // Convert an array of strings with default options.
  * arr2obj(arr2);
