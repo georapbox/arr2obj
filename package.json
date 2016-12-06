@@ -7,7 +7,7 @@
     "build": "webpack --mode=build",
     "dev": "webpack --progress --colors --watch --mode=dev",
     "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js",
-    "jsdoc2md": "jsdoc2md"
+    "jsdoc2md": "jsdoc2md 'src/index.js' > 'README.md'"
   },
   "repository": {
     "type": "git",

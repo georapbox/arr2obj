@@ -63,7 +63,7 @@ import extend from './util/extend';
  * });
  * // -> { '_0_': 'orange', '_1_': 'banana', '_2_': 'apple', '_3_': 'cherry' }
  */
-export default function arr2obj(array, options) {
+function arr2obj(array, options) {
   if (!isArray(array)) {
     throw new TypeError('arr2obj must be called on an Array');
   }
@@ -113,3 +113,5 @@ export default function arr2obj(array, options) {
 
   return converted;
 }
+
+export default arr2obj;
