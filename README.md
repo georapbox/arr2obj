@@ -68,27 +68,3 @@ arr2obj(arr2, {
 });
 // -> { '_0_': 'orange', '_1_': 'banana', '_2_': 'apple', '_3_': 'cherry' }
 ```
-
-* [arr2obj(array, [options])](#arr2obj) ⇒ <code>Object</code>
-    * [~defaults](#arr2obj..defaults) : <code>Object</code>
-    * [~settings](#arr2obj..settings) : <code>Object</code>
-    * [~converted](#arr2obj..converted) : <code>Object</code>
-
-<a name="arr2obj..defaults"></a>
-
-### arr2obj~defaults : <code>Object</code>
-Dictionary of default options
-
-**Kind**: inner constant of <code>[arr2obj](#arr2obj)</code>  
-<a name="arr2obj..settings"></a>
-
-### arr2obj~settings : <code>Object</code>
-Copy of default and user options
-
-**Kind**: inner constant of <code>[arr2obj](#arr2obj)</code>  
-<a name="arr2obj..converted"></a>
-
-### arr2obj~converted : <code>Object</code>
-The converted result object
-
-**Kind**: inner constant of <code>[arr2obj](#arr2obj)</code>  
