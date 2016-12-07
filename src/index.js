@@ -68,6 +68,7 @@ function arr2obj(array, options) {
 
   /**
    * Dictionary of default options
+   * @private
    * @type {Object}
    */
   const defaults = {
@@ -80,6 +81,7 @@ function arr2obj(array, options) {
 
   /**
    * Copy of default and user options
+   * @private
    * @type {Object}
    */
   const settings = isPlainObject(options) ? extend({}, defaults, options) : extend({}, defaults);
@@ -93,6 +95,7 @@ function arr2obj(array, options) {
 
   /**
    * The converted result object
+   * @private
    * @type {Object}
    */
   const converted = array.reduce(function (accum, current, index) {
