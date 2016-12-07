@@ -14,10 +14,10 @@ Converts an array of primitives or objects to a plain object.
 | --- | --- | --- | --- |
 | array | <code>Array</code> |  | The initial array to convert. |
 | [options] | <code>Object</code> |  | User defined options to override defaults. |
-| [options.key] | <code>String</code> |  | If `array` is an array of objects and each object has a property with the value of `key`, use those as the properties of the result object. By default the index of each object in array is used. |
-| [options.keyPrefix] | <code>String</code> | <code>&#x27;&#x27;</code> | A string that prefixes the values of the specified `key`. If anything than string is provided, it takes the default value (''). |
-| [options.keySuffix] | <code>String</code> | <code>&#x27;&#x27;</code> | A string that suffixes the values of the specified `key`. If anything than string is provided, it takes the default value (''). |
-| [options.deleteKey] | <code>Boolean</code> | <code>false</code> | If `key` is specified and `options.deleteKey` is true, delete the property from the result object. |
+| [options.key] | <code>String</code> |  | If `array` is an array of objects and each object has a property with the value of `key`, use those as the properties of the result object. By default the index of each item in array is used. |
+| [options.keyPrefix] | <code>String</code> | <code>&#x27;&#x27;</code> | A string that prefixes the keys of the result object. If anything than string is provided, it takes the default value (''). |
+| [options.keySuffix] | <code>String</code> | <code>&#x27;&#x27;</code> | A string that suffixes the keys of the result object. If anything than string is provided, it takes the default value (''). |
+| [options.deleteKey] | <code>Boolean</code> | <code>false</code> | Deletes the property of each item of the result object if `key` is specified and exists in current object. If `key` does not exist in current item or current item is not an object, leaves the property as is. |
 | [options.inheritProto] | <code>Boolean</code> | <code>false</code> | Determines if the result object should inherit from the `Object.prototype`. |
 
 **Example**  
