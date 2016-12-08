@@ -1,24 +1,35 @@
-var webpack = require('webpack');
-var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
-var path = require('path');
-var env = require('yargs').argv.mode;
+const webpack = require('webpack');
+const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const path = require('path');
+const env = require('yargs').argv.mode;
+const pkg = require('./package.json');
 
-var libraryName = 'arr2obj';
+const libraryName = 'arr2obj';
 
-var plugins = [], outputFile;
+const banner = `${pkg.name} - ${pkg.description}\n
+@version v${pkg.version}
+@author ${pkg.author}
+@homepage ${pkg.homepage}
+@repository ${pkg.repository.url}`;
+
+let outputFile;
+
+const plugins = [
+  new webpack.BannerPlugin(banner)
+];
 
 if (env === 'build') {
-  plugins.push(new UglifyJsPlugin({ minimize: true }));
-  outputFile = libraryName + '.min.js';
+  plugins.push(new UglifyJsPlugin({minimize: true}));
+  outputFile = `${libraryName}.min.js`;
 } else {
-  outputFile = libraryName + '.js';
+  outputFile = `${libraryName}.js`;
 }
 
-var config = {
-  entry: __dirname + '/src/index.js',
+const config = {
+  entry: `${__dirname}/src/index.js`,
   devtool: 'source-map',
   output: {
-    path: __dirname + '/lib',
+    path: `${__dirname}/lib`,
     filename: outputFile,
     library: libraryName,
     libraryTarget: 'umd',
