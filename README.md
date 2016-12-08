@@ -1,6 +1,6 @@
 # arr2obj
 
-[![Dependencies](https://david-dm.org/georapbox/arr2obj.svg?theme=shields.io)](https://david-dm.org/georapbox/arr2obj) [![devDependency Status](https://david-dm.org/georapbox/arr2obj/dev-status.svg)](https://david-dm.org/georapbox/arr2obj#info=devDependencies)
+[![Build Status](https://travis-ci.org/georapbox/arr2obj.svg?branch=master)](https://travis-ci.org/georapbox/arr2obj) [![Dependencies](https://david-dm.org/georapbox/arr2obj.svg?theme=shields.io)](https://david-dm.org/georapbox/arr2obj) [![devDependency Status](https://david-dm.org/georapbox/arr2obj/dev-status.svg)](https://david-dm.org/georapbox/arr2obj#info=devDependencies)
 
 ## Install
 ```bash

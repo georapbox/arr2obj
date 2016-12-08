@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/georapbox/arr2obj#readme",
   "devDependencies": {
-    "babel": "~6.5.2",
+    "babel-cli": "~6.18.0",
     "babel-core": "~6.18.2",
     "babel-loader": "~6.2.8",
     "babel-plugin-add-module-exports": "~0.2.1",
