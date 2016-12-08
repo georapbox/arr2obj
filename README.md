@@ -1,9 +1,16 @@
-<a name="arr2obj"></a>
+# arr2obj
+
+[![Dependencies](https://david-dm.org/georapbox/arr2obj.svg?theme=shields.io)](https://david-dm.org/georapbox/arr2obj) [![devDependency Status](https://david-dm.org/georapbox/arr2obj/dev-status.svg)](https://david-dm.org/georapbox/arr2obj#info=devDependencies)
+
+## Install
+```bash
+$ npm install arr2obj
+```
 
 ## arr2obj(array, [options]) ⇒ <code>Object</code>
+
 Converts an array of primitives or objects to a plain object.
 
-**Kind**: global function  
 **Returns**: <code>Object</code> - The converted object.  
 **Throws**:
 
@@ -81,4 +88,20 @@ arr2obj(mixedArray, {
 // ->   '2': 'Just a string',
 // ->   u0: { _id: 'u0', name: 'John Doe', job: 'Frontend Developer' }
 // -> }
+```
+
+## Build for development
+```bash
+$ npm run dev
+```
+
+## Build for production
+```bash
+$ npm run build
+```
+
+## Test
+
+```bash
+$ npm test
 ```
