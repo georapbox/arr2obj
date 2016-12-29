@@ -1,6 +1,11 @@
 # arr2obj
 
-[![Build Status](https://travis-ci.org/georapbox/arr2obj.svg?branch=master)](https://travis-ci.org/georapbox/arr2obj) [![Dependencies](https://david-dm.org/georapbox/arr2obj.svg?theme=shields.io)](https://david-dm.org/georapbox/arr2obj) [![devDependency Status](https://david-dm.org/georapbox/arr2obj/dev-status.svg)](https://david-dm.org/georapbox/arr2obj#info=devDependencies)
+Converts an array of primitives or objects to a plain object.
+
+[![Build Status](https://travis-ci.org/georapbox/arr2obj.svg?branch=master)](https://travis-ci.org/georapbox/arr2obj)
+[![npm version](https://badge.fury.io/js/arr2obj.svg)](http://badge.fury.io/js/arr2obj)
+[![Dependencies](https://david-dm.org/georapbox/arr2obj.svg?theme=shields.io)](https://david-dm.org/georapbox/arr2obj)
+[![devDependency Status](https://david-dm.org/georapbox/arr2obj/dev-status.svg)](https://david-dm.org/georapbox/arr2obj#info=devDependencies)
 
 ## Install
 ```bash
@@ -8,8 +13,6 @@ $ npm install arr2obj
 ```
 
 ## arr2obj(array, [options]) ⇒ <code>Object</code>
-
-Converts an array of primitives or objects to a plain object.
 
 **Returns**: <code>Object</code> - The converted object.  
 **Throws**:
